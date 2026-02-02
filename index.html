@@ -2,37 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Coding | Master Programming</title>
     <link rel="stylesheet" href="index-style-EN.css" />
-    <title>LEARN CODING | Home</title>
     <link rel="icon" href="picture/logo.png" />
-    <script src="https://kit.fontawesome.com/106ba5d17b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2654036089977891" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Learn <span style="color:var(--main-color)">Coding</span></a>
+      <a href="#" class="logo">Learn <span class="highlight">Coding</span></a>
+      <div class="menu-btn"><i class="fas fa-bars"></i></div>
       <nav class="navigation">
         <a href="#services">Services</a>
         <a href="#projects">Tracks</a>
         <a href="#contact">Contact</a>
         <a href="./index-AR.html" class="lang-switch"><i class="fa-solid fa-language"></i> العربية</a>
+        <div class="theme-switch" id="theme-toggle"><i class="fas fa-moon"></i></div>
       </nav>
     </header>
 
     <section class="main">
       <div class="main-content">
-        <h2>Welcome to<br /><span>LEARN CODING</span></h2>
-        <h3>Your journey to master programming starts here!</h3>
-        <a href="#projects" class="main-btn">View Available Tracks <i class="fas fa-arrow-right"></i></a>
-        <div class="social-icons">
-          <a href="https://github.com/9mtg6" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://discord.gg/NcV4CezA" target="_blank"><i class="fa-brands fa-discord"></i></a>
-          <a href="https://www.instagram.com/9mtg_6/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://youtube.com/channel/UCtYAVn_DS1r22x_1NXSE85A" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </div>
+        <h2>Welcome to the world of<br /><span class="gradient-text">Pro Coding</span></h2>
+        <h3>From zero to hero, your journey starts here.</h3>
+        <a href="#projects" class="main-btn">Start Learning <i class="fas fa-arrow-right"></i></a>
       </div>
     </section>
 
@@ -40,101 +34,126 @@
       <h2 class="title">Our Services</h2>
       <div class="content">
         <div class="card">
-          <div class="icon"><i class="fas fa-edit"></i></div>
+          <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
           <div class="info">
-            <h3>Free Courses</h3>
-            <p>We offer various training courses to help you start your coding journey.</p>
+            <h3>Comprehensive Tracks</h3>
+            <p>Curriculums designed to cover market needs.</p>
           </div>
         </div>
         <div class="card">
-          <div class="icon"><i class="fas fa-video"></i></div>
+          <div class="icon-box"><i class="fas fa-play-circle"></i></div>
           <div class="info">
-            <h3>Video Tutorials</h3>
-            <p>Recorded sessions taking you from scratch to professionalism.</p>
+            <h3>Interactive Learning</h3>
+            <p>High-quality video tutorials with real-world projects.</p>
           </div>
         </div>
         <div class="card">
-          <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="icon-box"><i class="fas fa-certificate"></i></div>
           <div class="info">
             <h3>Certificates</h3>
-            <p>Earn accredited certificates upon completing programming challenges.</p>
+            <p>Earn certificates to boost your CV upon completion.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="projects" id="projects">
-      <h2 class="title">Available Tracks</h2>
+      <h2 class="title">Choose Your Track</h2>
       <div class="content">
         <div class="project-card">
-          <div class="project-image"><img src="picture/Unity.jpg" alt="Unity"></div>
-          <div class="project-info">
-            <p class="project-category">Unity - C#</p>
-            <strong class="project-title">Game Development</strong>
-            <a href="./Game-Dev.html" class="more-details">Details <i class="fas fa-angle-right"></i></a>
+          <div class="card-img">
+            <img src="picture/Unity.jpg" alt="Game Dev">
+            <div class="overlay"><a href="./Game-Dev.html" class="overlay-btn">View Course</a></div>
+          </div>
+          <div class="card-body">
+            <span class="tag">C# & Unity</span>
+            <h3>Game Development</h3>
           </div>
         </div>
         <div class="project-card">
-          <div class="project-image"><img src="picture/Visual Studio Code.png" alt="Web"></div>
-          <div class="project-info">
-            <p class="project-category">HTML - CSS - JS</p>
-            <strong class="project-title">Web Development</strong>
-            <a href="./Web-site-Dev.html" class="more-details">Details <i class="fas fa-angle-right"></i></a>
+          <div class="card-img">
+            <img src="picture/Visual Studio Code.png" alt="Web Dev">
+            <div class="overlay"><a href="./Web-site-Dev.html" class="overlay-btn">View Course</a></div>
+          </div>
+          <div class="card-body">
+            <span class="tag">Web Stack</span>
+            <h3>Web Development</h3>
           </div>
         </div>
         <div class="project-card">
-          <div class="project-image"><img src="./picture/Android Studio.png" alt="Android"></div>
-          <div class="project-info">
-            <p class="project-category">Java - Kotlin</p>
-            <strong class="project-title">Android Development</strong>
-            <a href="./Android-Dev.html" class="more-details">Details <i class="fas fa-angle-right"></i></a>
+          <div class="card-img">
+            <img src="./picture/Android Studio.png" alt="Android">
+            <div class="overlay"><a href="./Android-Dev.html" class="overlay-btn">View Course</a></div>
+          </div>
+          <div class="card-body">
+            <span class="tag">Java & Kotlin</span>
+            <h3>Android Apps</h3>
           </div>
         </div>
         <div class="project-card">
-          <div class="project-image"><img src="./picture/Xcode.png" alt="iOS"></div>
-          <div class="project-info">
-            <p class="project-category">Swift - Xcode</p>
-            <strong class="project-title">iOS Development</strong>
-            <a href="./IOS-Dev.html" class="more-details">Details <i class="fas fa-angle-right"></i></a>
+          <div class="card-img">
+            <img src="./picture/Xcode.png" alt="iOS">
+            <div class="overlay"><a href="./IOS-Dev.html" class="overlay-btn">View Course</a></div>
+          </div>
+          <div class="card-body">
+            <span class="tag">Swift & SwiftUI</span>
+            <h3>iOS Apps</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cards contact" id="contact">
+    <section class="contact" id="contact">
       <h2 class="title">Contact Us</h2>
-      <div class="content">
-        <div class="card contact-card">
-          <div class="icon"><i class="fas fa-phone"></i></div>
-          <div class="info">
-            <h3>Phone</h3>
-            <p>+965 6687 7036</p>
-          </div>
-        </div>
-        <div class="card contact-card">
-          <div class="icon"><i class="fas fa-envelope"></i></div>
-          <div class="info">
-            <h3>Email</h3>
-            <a href="./message.html" target="_blank" class="contact-btn">Send Message</a>
-          </div>
-        </div>
+      <div class="contact-container">
+         <a href="tel:+96566877036" class="contact-box">
+             <i class="fas fa-phone-alt"></i>
+             <span>+965 6687 7036</span>
+         </a>
+         <a href="./message.html" class="contact-box">
+             <i class="fas fa-envelope-open-text"></i>
+             <span>Send Message</span>
+         </a>
       </div>
     </section>
 
     <footer class="footer">
-      <p class="footer-title">Developed by <span>Marwan Tarek</span></p>
-      <div class="social-icons">
-        <a href="https://github.com/9mtg6" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://discord.gg/NcV4CezA" target="_blank"><i class="fa-brands fa-discord"></i></a>
-        <a href="https://www.instagram.com/9mtg_6/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://youtube.com/channel/UCtYAVn_DS1r22x_1NXSE85A" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-      </div>
+      <p>Developed by <span class="highlight">Marwan Tarek</span> &copy; 2020</p>
     </footer>
+
     <script>
-      window.addEventListener("scroll", function(){
-        const header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        const body = document.body;
+        if(localStorage.getItem('theme') === 'light'){
+            body.classList.add('light-mode');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            if(body.classList.contains('light-mode')){
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+        const menuBtn = document.querySelector('.menu-btn');
+        const navigation = document.querySelector('.navigation');
+        menuBtn.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+            menuBtn.querySelector('i').classList.toggle('fa-times');
+        });
+        document.querySelectorAll('.navigation a').forEach(link => {
+            link.addEventListener('click', () => {
+                navigation.classList.remove('active');
+                menuBtn.querySelector('i').classList.remove('fa-times');
+            });
+        });
+        window.addEventListener("scroll", function(){
+            document.querySelector("header").classList.toggle("sticky", window.scrollY > 0);
+        });
     </script>
   </body>
 </html>

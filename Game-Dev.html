@@ -6,50 +6,61 @@
     <title>Game Development Track</title>
     <link rel="stylesheet" href="Dev-Style.css" />
     <link rel="icon" href="picture/logo.png" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2654036089977891" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <header>
-      <a href="#" class="logo">LEARN <span style="color:#3a6cf4">CODING</span></a>
-      <nav class="navigation">
-        <a href="./index.html">Back Home</a>
-      </nav>
+      <a href="./index.html" class="logo">LEARN <span>CODING</span></a>
+      <div class="nav-links">
+        <a href="./index.html" class="nav-btn"><i class="fas fa-home"></i> Home</a>
+        <div class="theme-switch" id="theme-toggle"><i class="fas fa-moon"></i></div>
+      </div>
     </header>
 
     <section class="projects">
       <h2 class="title">Game Development</h2>
-      <p class="subtitle">Master Unity & C# from scratch</p>
+      <p class="subtitle">Master Unity & C# from scratch to professional level</p>
 
       <div class="steps-container">
-        <div class="step-item"><h3>1. Install Unity Hub</h3></div>
-        <div class="step-item"><h3>2. Install Visual Studio</h3></div>
-        <div class="step-item"><h3>3. Learn C# Basics</h3></div>
+        <div class="step-item"><i class="fas fa-download"></i> Install Unity Hub</div>
+        <div class="step-item"><i class="fas fa-code"></i> Install VS Code</div>
+        <div class="step-item"><i class="fas fa-book"></i> C# Basics</div>
       </div>
 
       <div class="content">
         <div class="project-card">
           <div class="project-image">
-            <iframe src="https://www.youtube.com/embed/OGFHFvtCmkE" title="Video 1" frameborder="0" allowfullscreen></iframe>
-            <div class="video-label">1. Introduction to Unity</div>
+            <iframe src="https://www.youtube.com/embed/OGFHFvtCmkE" title="Video" allowfullscreen></iframe>
+            <div class="video-label">1. Introduction to Unity Engine</div>
           </div>
         </div>
-
         <div class="project-card">
           <div class="project-image">
-            <iframe src="https://www.youtube.com/embed/JeNM21S8HQ4" title="Video 2" frameborder="0" allowfullscreen></iframe>
-            <div class="video-label">2. Your First Script</div>
+            <iframe src="https://www.youtube.com/embed/JeNM21S8HQ4" title="Video" allowfullscreen></iframe>
+            <div class="video-label">2. Creating Your First Script</div>
           </div>
         </div>
-
-        <div class="project-card">
-           <div class="project-image">
-             <div style="height:100%; display:flex; align-items:center; justify-content:center; background:#222; color:#555;">
-               <h3>COMING SOON</h3>
-             </div>
-           </div>
-        </div>
-
       </div>
     </section>
+
+    <script>
+      const themeToggle = document.getElementById('theme-toggle');
+      const icon = themeToggle.querySelector('i');
+      const body = document.body;
+      if(localStorage.getItem('theme') === 'light'){
+          body.classList.add('light-mode');
+          icon.classList.replace('fa-moon', 'fa-sun');
+      }
+      themeToggle.addEventListener('click', () => {
+          body.classList.toggle('light-mode');
+          if(body.classList.contains('light-mode')){
+              icon.classList.replace('fa-moon', 'fa-sun');
+              localStorage.setItem('theme', 'light');
+          } else {
+              icon.classList.replace('fa-sun', 'fa-moon');
+              localStorage.setItem('theme', 'dark');
+          }
+      });
+    </script>
   </body>
 </html>
