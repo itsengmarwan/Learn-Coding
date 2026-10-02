@@ -1,6 +1,3 @@
-/* =========================================
-   1. VARIABLES & THEME SETUP
-   ========================================= */
 :root {
     --bg-primary: #0a0a1a;
     --bg-secondary: #13132b;
@@ -27,15 +24,9 @@ body.light-mode {
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* =========================================
-   2. GLOBAL RESET
-   ========================================= */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-ar); scroll-behavior: smooth; }
 body { background-color: var(--bg-primary); color: var(--text-primary); direction: rtl; overflow-x: hidden; transition: 0.4s; }
 
-/* =========================================
-   3. HEADER
-   ========================================= */
 header {
     position: fixed; top: 0; right: 0; left: 0; padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; transition: 0.4s; background: transparent;
 }
@@ -55,22 +46,18 @@ body.light-mode header.sticky { background: rgba(255, 255, 255, 0.85); }
 .theme-switch:hover { background-color: var(--border-color); color: var(--accent-color); }
 .menu-btn { display: none; font-size: 1.8rem; color: var(--text-primary); cursor: pointer; }
 
-/* =========================================
-   4. HERO SECTION
-   ========================================= */
 .main {
     min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 120px 20px 50px;
     background: radial-gradient(circle at top left, rgba(58, 108, 244, 0.15), transparent 40%), radial-gradient(circle at bottom right, rgba(96, 28, 252, 0.15), transparent 40%);
 }
 .main h2 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; font-weight: 800; }
 
-/* النص المتدرج - تم إضافة الخاصية القياسية لإزالة التحذير */
 .gradient-text {
     background: linear-gradient(to right, var(--accent-color), var(--accent-hover));
     -webkit-background-clip: text;
-    background-clip: text; /* خاصية قياسية */
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* احتياطي */
+    color: transparent;
 }
 
 .main h3 { font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 40px; }
@@ -82,22 +69,17 @@ body.light-mode header.sticky { background: rgba(255, 255, 255, 0.85); }
 .social-icons a { color: var(--text-secondary); font-size: 1.5rem; margin: 0 15px; transition: 0.3s; display: inline-block; }
 .social-icons a:hover { color: var(--accent-color); transform: scale(1.2); }
 
-/* =========================================
-   5. SECTIONS
-   ========================================= */
 section { padding: 80px 8%; }
 .cards, .contact { background-color: var(--bg-secondary); }
 .title { text-align: center; font-size: 2.5rem; margin-bottom: 60px; font-weight: 800; position: relative; width: 100%; }
 .title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--accent-color); margin: 10px auto 0; border-radius: 2px; }
 .content { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
-/* Cards */
 .card { background: var(--card-bg); border: 1px solid var(--border-color); padding: 40px 30px; border-radius: 20px; text-align: center; transition: 0.4s; backdrop-filter: blur(10px); }
 .card:hover { transform: translateY(-10px); box-shadow: var(--shadow); border-color: var(--accent-color); }
 .icon-box { font-size: 3rem; color: var(--accent-color); margin-bottom: 20px; }
 .info p { color: var(--text-secondary); line-height: 1.6; }
 
-/* Project Cards */
 .project-card { background: var(--card-bg); border-radius: 20px; overflow: hidden; border: 1px solid var(--border-color); transition: 0.4s; }
 .project-card:hover { transform: translateY(-10px); box-shadow: var(--shadow); }
 .card-img { position: relative; height: 200px; }
@@ -110,9 +92,6 @@ section { padding: 80px 8%; }
 .card-body { padding: 20px; text-align: center; }
 .tag { font-size: 0.8rem; color: var(--accent-color); font-weight: 700; font-family: var(--font-en); }
 
-/* =========================================
-   6. CONTACT & FOOTER
-   ========================================= */
 .contact-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
 .contact-box { background: var(--card-bg); border: 1px solid var(--border-color); padding: 30px 50px; border-radius: 15px; text-decoration: none; color: var(--text-primary); display: flex; align-items: center; gap: 15px; font-size: 1.2rem; font-weight: 600; transition: 0.3s; }
 .contact-box:hover { background: var(--accent-color); color: #fff; border-color: var(--accent-color); }
@@ -121,9 +100,6 @@ section { padding: 80px 8%; }
 
 .footer { padding: 40px; text-align: center; background: var(--bg-primary); border-top: 1px solid var(--border-color); color: var(--text-secondary); }
 
-/* =========================================
-   7. RESPONSIVE
-   ========================================= */
 @media (max-width: 991px) { section { padding: 60px 5%; } .main h2 { font-size: 2.5rem; } }
 @media (max-width: 768px) {
     .menu-btn { display: block; }
