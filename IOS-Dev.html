@@ -3,46 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IOS Development Track</title>
+    <title>iOS Development Track</title>
     <link rel="stylesheet" href="Dev-Style.css" />
     <link rel="icon" href="picture/logo.png" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2654036089977891" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <header>
-      <a href="#" class="logo">LEARN <span style="color:#3a6cf4">CODING</span></a>
-      <nav class="navigation">
-        <a href="./index.html">Back Home</a>
-      </nav>
+      <a href="./index.html" class="logo">LEARN <span>CODING</span></a>
+      <div class="nav-links">
+        <a href="./index.html" class="nav-btn"><i class="fas fa-home"></i> Home</a>
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to light theme" style="border: 0; background: transparent; color: inherit;"><i class="fas fa-moon" aria-hidden="true"></i></button>
+      </div>
     </header>
 
     <section class="projects">
       <h2 class="title">iOS Development</h2>
-      <p class="subtitle"></p>
+      <p class="subtitle">Learn Swift and build apps for iPhone and iPad</p>
 
       <div class="steps-container">
-        <div class="step-item"><h3></h3></div>
-        <div class="step-item"><h3></h3></div>
-        <div class="step-item"><h3></h3></div>
+        <div class="step-item"><i class="fas fa-download"></i> Install Xcode</div>
+        <div class="step-item"><i class="fas fa-code"></i> Learn Swift</div>
+        <div class="step-item"><i class="fas fa-book"></i> Build with SwiftUI</div>
       </div>
 
+      <div class="content">
         <div class="project-card">
-           <div class="project-image">
-             <div style="height:100%; display:flex; align-items:center; justify-content:center; background:#222; color:#555;">
-               <h3>COMING SOON</h3>
-             </div>
-           </div>
+          <a class="project-image" href="https://developer.apple.com/tutorials/swiftui" target="_blank" rel="noopener noreferrer" aria-label="Open Apple's SwiftUI tutorials" style="position: absolute; inset: 0; display: block; background: linear-gradient(135deg, #182b52, #10101d);">
+            <div class="video-label">1. Start building with SwiftUI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
+          </a>
         </div>
-
         <div class="project-card">
-           <div class="project-image">
-             <div style="height:100%; display:flex; align-items:center; justify-content:center; background:#222; color:#555;">
-               <h3>COMING SOON</h3>
-             </div>
-           </div>
+          <a class="project-image" href="https://developer.apple.com/documentation/swift" target="_blank" rel="noopener noreferrer" aria-label="Open Apple's Swift documentation" style="position: absolute; inset: 0; display: block; background: linear-gradient(135deg, #263b69, #10101d);">
+            <div class="video-label">2. Explore the Swift language <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
+          </a>
         </div>
-
       </div>
     </section>
+
+    <script>
+      const themeToggle = document.getElementById('theme-toggle');
+      const icon = themeToggle.querySelector('i');
+      const body = document.body;
+
+      function applyTheme(isLight) {
+        body.classList.toggle('light-mode', isLight);
+        icon.classList.toggle('fa-sun', isLight);
+        icon.classList.toggle('fa-moon', !isLight);
+        themeToggle.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} theme`);
+      }
+
+      try {
+        applyTheme(localStorage.getItem('theme') === 'light');
+      } catch (error) {
+        applyTheme(false);
+      }
+
+      themeToggle.addEventListener('click', () => {
+        const isLight = !body.classList.contains('light-mode');
+        applyTheme(isLight);
+        try {
+          localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        } catch (error) {
+          // Theme switching still works when browser storage is unavailable.
+        }
+      });
+    </script>
   </body>
 </html>
