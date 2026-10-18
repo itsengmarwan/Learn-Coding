@@ -3,157 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Coding | Master Programming</title>
+    <meta name="description" content="Learn Coding helps beginners explore practical paths in web, game, Android, and iOS development." />
+    <meta name="theme-color" content="#0a0a1a" />
+    <title>Learn Coding | Practical Programming Tracks</title>
     <link rel="stylesheet" href="index-style-EN.css" />
     <link rel="icon" href="picture/logo.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-      <meta name="description" content="Learn Coding is a bilingual front-end learning platform with practical HTML, CSS, and web development resources." />  </head>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header>
-      <a href="#" class="logo">Learn <span class="highlight">Coding</span></a>
-      <div class="menu-btn"><i class="fas fa-bars"></i></div>
-      <nav class="navigation">
+      <a href="./index.html" class="logo" aria-label="Learn Coding home">Learn <span class="highlight">Coding</span></a>
+      <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="navigation" id="site-navigation" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#projects">Tracks</a>
         <a href="#contact">Contact</a>
-        <a href="./index-AR.html" class="lang-switch"><i class="fa-solid fa-language"></i> العربية</a>
-        <div class="theme-switch" id="theme-toggle"><i class="fas fa-moon"></i></div>
+        <a href="./index-AR.html" class="lang-switch"><i class="fa-solid fa-language" aria-hidden="true"></i> العربية</a>
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
       </nav>
     </header>
 
-    <section class="main">
-      <div class="main-content">
-        <h2>Welcome to the world of<br /><span class="gradient-text">Pro Coding</span></h2>
-        <h3>From zero to hero, your journey starts here.</h3>
-        <a href="#projects" class="main-btn">Start Learning <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </section>
+    <main id="main-content">
+      <section class="main" aria-labelledby="hero-title">
+        <div class="main-content">
+          <h1 id="hero-title">Welcome to the world of<br /><span class="gradient-text">Pro Coding</span></h1>
+          <p class="hero-subtitle">From zero to hero, your journey starts here.</p>
+          <a href="#projects" class="main-btn">Start Learning <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
 
-    <section class="cards" id="services">
-      <h2 class="title">Our Services</h2>
-      <div class="content">
-        <div class="card">
-          <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
-          <div class="info">
-            <h3>Comprehensive Tracks</h3>
-            <p>Curriculums designed to cover market needs.</p>
-          </div>
+      <section class="cards" id="services" aria-labelledby="services-title">
+        <h2 class="title" id="services-title">Our Services</h2>
+        <div class="content">
+          <article class="card">
+            <div class="icon-box" aria-hidden="true"><i class="fas fa-laptop-code"></i></div>
+            <div class="info"><h3>Comprehensive Tracks</h3><p>Curriculums designed to cover practical market needs.</p></div>
+          </article>
+          <article class="card">
+            <div class="icon-box" aria-hidden="true"><i class="fas fa-play-circle"></i></div>
+            <div class="info"><h3>Interactive Learning</h3><p>High-quality tutorials focused on real-world projects.</p></div>
+          </article>
+          <article class="card">
+            <div class="icon-box" aria-hidden="true"><i class="fas fa-certificate"></i></div>
+            <div class="info"><h3>Portfolio Growth</h3><p>Build projects that demonstrate your skills and progress.</p></div>
+          </article>
         </div>
-        <div class="card">
-          <div class="icon-box"><i class="fas fa-play-circle"></i></div>
-          <div class="info">
-            <h3>Interactive Learning</h3>
-            <p>High-quality video tutorials with real-world projects.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon-box"><i class="fas fa-certificate"></i></div>
-          <div class="info">
-            <h3>Certificates</h3>
-            <p>Earn certificates to boost your CV upon completion.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="projects" id="projects">
-      <h2 class="title">Choose Your Track</h2>
-      <div class="content">
-        <div class="project-card">
-          <div class="card-img">
-            <img src="picture/Unity.jpg" alt="Game Dev">
-            <div class="overlay"><a href="./Game-Dev.html" class="overlay-btn">View Course</a></div>
-          </div>
-          <div class="card-body">
-            <span class="tag">C# & Unity</span>
-            <h3>Game Development</h3>
-          </div>
+      <section class="projects" id="projects" aria-labelledby="tracks-title">
+        <h2 class="title" id="tracks-title">Choose Your Track</h2>
+        <div class="content">
+          <article class="project-card">
+            <div class="card-img"><img src="picture/Unity.jpg" alt="Unity game development" loading="lazy" decoding="async" /><div class="overlay"><a href="./Game-Dev.html" class="overlay-btn">View Course</a></div></div>
+            <div class="card-body"><span class="tag">C# &amp; Unity</span><h3>Game Development</h3></div>
+          </article>
+          <article class="project-card">
+            <div class="card-img"><img src="picture/Visual Studio Code.png" alt="Web development with Visual Studio Code" loading="lazy" decoding="async" /><div class="overlay"><a href="./Web-site-Dev.html" class="overlay-btn">View Course</a></div></div>
+            <div class="card-body"><span class="tag">Web Stack</span><h3>Web Development</h3></div>
+          </article>
+          <article class="project-card">
+            <div class="card-img"><img src="picture/Android Studio.png" alt="Android app development" loading="lazy" decoding="async" /><div class="overlay"><a href="./Android-Dev.html" class="overlay-btn">View Course</a></div></div>
+            <div class="card-body"><span class="tag">Java &amp; Kotlin</span><h3>Android Apps</h3></div>
+          </article>
+          <article class="project-card">
+            <div class="card-img"><img src="picture/Xcode.png" alt="iOS app development with Xcode" loading="lazy" decoding="async" /><div class="overlay"><a href="./IOS-Dev.html" class="overlay-btn">View Course</a></div></div>
+            <div class="card-body"><span class="tag">Swift &amp; SwiftUI</span><h3>iOS Apps</h3></div>
+          </article>
         </div>
-        <div class="project-card">
-          <div class="card-img">
-            <img src="picture/Visual Studio Code.png" alt="Web Dev">
-            <div class="overlay"><a href="./Web-site-Dev.html" class="overlay-btn">View Course</a></div>
-          </div>
-          <div class="card-body">
-            <span class="tag">Web Stack</span>
-            <h3>Web Development</h3>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="card-img">
-            <img src="./picture/Android Studio.png" alt="Android">
-            <div class="overlay"><a href="./Android-Dev.html" class="overlay-btn">View Course</a></div>
-          </div>
-          <div class="card-body">
-            <span class="tag">Java & Kotlin</span>
-            <h3>Android Apps</h3>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="card-img">
-            <img src="./picture/Xcode.png" alt="iOS">
-            <div class="overlay"><a href="./IOS-Dev.html" class="overlay-btn">View Course</a></div>
-          </div>
-          <div class="card-body">
-            <span class="tag">Swift & SwiftUI</span>
-            <h3>iOS Apps</h3>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact" id="contact">
-      <h2 class="title">Contact Us</h2>
-      <div class="contact-container">
-         <a href="tel:+96566877036" class="contact-box">
-             <i class="fas fa-phone-alt"></i>
-             <span>+965 6687 7036</span>
-         </a>
-         <a href="./message.html" class="contact-box">
-             <i class="fas fa-envelope-open-text"></i>
-             <span>Send Message</span>
-         </a>
-      </div>
-    </section>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="title" id="contact-title">Contact Us</h2>
+        <div class="contact-container">
+          <a href="tel:+96566877036" class="contact-box"><i class="fas fa-phone-alt" aria-hidden="true"></i><span>+965 6687 7036</span></a>
+          <a href="./message.html" class="contact-box"><i class="fas fa-envelope-open-text" aria-hidden="true"></i><span>Send Message</span></a>
+        </div>
+      </section>
+    </main>
 
-    <footer class="footer">
-      <p>Developed by <span class="highlight">Marwan Tarek</span> &copy; 2020</p>
-    </footer>
+    <footer class="footer"><p>Developed by <span class="highlight">Marwan Tarek</span> &copy; <span id="current-year">2026</span></p></footer>
 
     <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeIcon = themeToggle.querySelector('i');
-        const body = document.body;
-        if(localStorage.getItem('theme') === 'light'){
-            body.classList.add('light-mode');
-            themeIcon.classList.replace('fa-moon', 'fa-sun');
-        }
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('light-mode');
-            if(body.classList.contains('light-mode')){
-                themeIcon.classList.replace('fa-moon', 'fa-sun');
-                localStorage.setItem('theme', 'light');
-            } else {
-                themeIcon.classList.replace('fa-sun', 'fa-moon');
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-        const menuBtn = document.querySelector('.menu-btn');
-        const navigation = document.querySelector('.navigation');
-        menuBtn.addEventListener('click', () => {
-            navigation.classList.toggle('active');
-            menuBtn.querySelector('i').classList.toggle('fa-times');
-        });
-        document.querySelectorAll('.navigation a').forEach(link => {
-            link.addEventListener('click', () => {
-                navigation.classList.remove('active');
-                menuBtn.querySelector('i').classList.remove('fa-times');
-            });
-        });
-        window.addEventListener("scroll", function(){
-            document.querySelector("header").classList.toggle("sticky", window.scrollY > 0);
-        });
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeIcon = themeToggle.querySelector('i');
+      const menuBtn = document.querySelector('.menu-btn');
+      const navigation = document.getElementById('site-navigation');
+      const currentYear = document.getElementById('current-year');
+
+      currentYear.textContent = new Date().getFullYear();
+
+      const setTheme = (isLight) => {
+        document.body.classList.toggle('light-mode', isLight);
+        themeIcon.classList.toggle('fa-sun', isLight);
+        themeIcon.classList.toggle('fa-moon', !isLight);
+        themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+        themeToggle.setAttribute('aria-pressed', String(isLight));
+      };
+
+      setTheme(localStorage.getItem('theme') === 'light');
+      themeToggle.addEventListener('click', () => {
+        const isLight = !document.body.classList.contains('light-mode');
+        setTheme(isLight);
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      });
+
+      const closeMenu = () => {
+        navigation.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+      };
+
+      menuBtn.addEventListener('click', () => {
+        const isOpen = navigation.classList.toggle('active');
+        menuBtn.setAttribute('aria-expanded', String(isOpen));
+        menuBtn.querySelector('i').classList.toggle('fa-bars', !isOpen);
+        menuBtn.querySelector('i').classList.toggle('fa-times', isOpen);
+      });
+
+      document.querySelectorAll('.navigation a').forEach((link) => link.addEventListener('click', closeMenu));
+      window.addEventListener('scroll', () => document.querySelector('header').classList.toggle('sticky', window.scrollY > 12), { passive: true });
     </script>
   </body>
 </html>
