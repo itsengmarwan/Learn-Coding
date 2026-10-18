@@ -41,33 +41,6 @@
       </div>
     </section>
 
-    <script>
-      const themeToggle = document.getElementById('theme-toggle');
-      const icon = themeToggle.querySelector('i');
-      const body = document.body;
-
-      function applyTheme(isLight) {
-        body.classList.toggle('light-mode', isLight);
-        icon.classList.toggle('fa-sun', isLight);
-        icon.classList.toggle('fa-moon', !isLight);
-        themeToggle.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} theme`);
-      }
-
-      try {
-        applyTheme(localStorage.getItem('theme') === 'light');
-      } catch (error) {
-        applyTheme(false);
-      }
-
-      themeToggle.addEventListener('click', () => {
-        const isLight = !body.classList.contains('light-mode');
-        applyTheme(isLight);
-        try {
-          localStorage.setItem('theme', isLight ? 'light' : 'dark');
-        } catch (error) {
-          // Theme switching still works when browser storage is unavailable.
-        }
-      });
-    </script>
+    <script src="track.js"></script>
   </body>
 </html>

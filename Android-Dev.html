@@ -3,46 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Android Development Track</title>
+    <meta name="description" content="A practical Android development track covering Kotlin, Jetpack Compose, and publishing." />
+    <title>Android Development Track | Learn Coding</title>
     <link rel="stylesheet" href="Dev-Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="icon" href="picture/logo.png" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2654036089977891" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">LEARN <span style="color:#3a6cf4">CODING</span></a>
-      <nav class="navigation">
-        <a href="./index.html">Back Home</a>
-      </nav>
+      <a href="./index.html" class="logo">LEARN <span>CODING</span></a>
+      <div class="nav-links">
+        <a href="./index.html" class="nav-btn"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><i class="fas fa-moon" aria-hidden="true"></i></button>
+      </div>
     </header>
-
-    <section class="projects">
-      <h2 class="title">Android Development</h2>
-      <p class="subtitle"></p>
-
-      <div class="steps-container">
-        <div class="step-item"><h3></h3></div>
-        <div class="step-item"><h3></h3></div>
-        <div class="step-item"><h3></h3></div>
+    <main class="projects">
+      <a class="back-link" href="./index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp; Back to all tracks</a>
+      <h1 class="title">Android Development</h1>
+      <p class="subtitle">Learn Kotlin and create modern Android apps with a clear, testable workflow.</p>
+      <p class="track-intro">Start with Android Studio, build screens with Compose, connect data, and finish by testing your app on an emulator or device.</p>
+      <div class="steps-container" aria-label="Learning roadmap">
+        <div class="step-item"><i class="fas fa-download" aria-hidden="true"></i> Android Studio</div>
+        <div class="step-item"><i class="fas fa-code" aria-hidden="true"></i> Kotlin basics</div>
+        <div class="step-item"><i class="fas fa-mobile-screen" aria-hidden="true"></i> Jetpack Compose</div>
+        <div class="step-item"><i class="fas fa-flask" aria-hidden="true"></i> Test &amp; release</div>
       </div>
-
-        <div class="project-card">
-           <div class="project-image">
-             <div style="height:100%; display:flex; align-items:center; justify-content:center; background:#222; color:#555;">
-               <h3>COMING SOON</h3>
-             </div>
-           </div>
-        </div>
-
-        <div class="project-card">
-           <div class="project-image">
-             <div style="height:100%; display:flex; align-items:center; justify-content:center; background:#222; color:#555;">
-               <h3>COMING SOON</h3>
-             </div>
-           </div>
-        </div>
-
-      </div>
-    </section>
+      <section class="content" aria-label="Android development resources">
+        <article class="resource-card"><div><h2>1. Set up your workspace</h2><p>Install Android Studio, create an emulator, and learn the structure of an Android project.</p></div><a class="resource-link" href="https://developer.android.com/studio/install" target="_blank" rel="noopener noreferrer">Install Android Studio <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>2. Kotlin fundamentals</h2><p>Practice variables, functions, collections, null safety, and object-oriented design.</p></div><a class="resource-link" href="https://kotlinlang.org/docs/kotlin-tour-welcome.html" target="_blank" rel="noopener noreferrer">Take the Kotlin tour <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>3. Build your first UI</h2><p>Create responsive screens with Compose, state, navigation, and reusable components.</p></div><a class="resource-link" href="https://developer.android.com/courses/android-basics-compose/course" target="_blank" rel="noopener noreferrer">Start Android Basics <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>4. Test and publish</h2><p>Add basic tests, check different screen sizes, and prepare a signed release build.</p></div><a class="resource-link" href="https://developer.android.com/studio/publish" target="_blank" rel="noopener noreferrer">Read publishing guidance <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+      </section>
+    </main>
+    <script src="track.js"></script>
   </body>
 </html>

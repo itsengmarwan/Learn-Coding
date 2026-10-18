@@ -43,24 +43,6 @@
       </div>
     </section>
 
-    <script>
-      const themeToggle = document.getElementById('theme-toggle');
-      const icon = themeToggle.querySelector('i');
-      const body = document.body;
-      if(localStorage.getItem('theme') === 'light'){
-          body.classList.add('light-mode');
-          icon.classList.replace('fa-moon', 'fa-sun');
-      }
-      themeToggle.addEventListener('click', () => {
-          body.classList.toggle('light-mode');
-          if(body.classList.contains('light-mode')){
-              icon.classList.replace('fa-moon', 'fa-sun');
-              localStorage.setItem('theme', 'light');
-          } else {
-              icon.classList.replace('fa-sun', 'fa-moon');
-              localStorage.setItem('theme', 'dark');
-          }
-      });
-    </script>
+    <script src="track.js"></script>
   </body>
 </html>

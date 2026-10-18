@@ -3,46 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web Development Track</title>
+    <meta name="description" content="A practical web development learning track covering the fundamentals and modern workflow." />
+    <title>Web Development Track | Learn Coding</title>
     <link rel="stylesheet" href="Dev-Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="icon" href="picture/logo.png" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2654036089977891" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">LEARN <span style="color:#3a6cf4">CODING</span></a>
-      <nav class="navigation">
-        <a href="./index.html">Back Home</a>
-      </nav>
+      <a href="./index.html" class="logo">LEARN <span>CODING</span></a>
+      <div class="nav-links">
+        <a href="./index.html" class="nav-btn"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><i class="fas fa-moon" aria-hidden="true"></i></button>
+      </div>
     </header>
-
-    <section class="projects">
-      <h2 class="title">web Development</h2>
-      <p class="subtitle"></p>
-
-      <div class="steps-container">
-        <div class="step-item"><h3></h3></div>
-        <div class="step-item"><h3></h3></div>
-        <div class="step-item"><h3></h3></div>
+    <main class="projects">
+      <a class="back-link" href="./index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp; Back to all tracks</a>
+      <h1 class="title">Web Development</h1>
+      <p class="subtitle">Build accessible, responsive websites from the first line of HTML to a polished deployment.</p>
+      <p class="track-intro">Follow the roadmap in order, practice each concept in a small project, and use the official references whenever you need a deeper explanation.</p>
+      <div class="steps-container" aria-label="Learning roadmap">
+        <div class="step-item"><i class="fas fa-code" aria-hidden="true"></i> HTML structure</div>
+        <div class="step-item"><i class="fas fa-palette" aria-hidden="true"></i> CSS layout</div>
+        <div class="step-item"><i class="fas fa-bolt" aria-hidden="true"></i> JavaScript logic</div>
+        <div class="step-item"><i class="fas fa-rocket" aria-hidden="true"></i> Ship a project</div>
       </div>
-
-        <div class="project-card">
-           <div class="project-image">
-             <div style="height:100%; display:flex; align-items:center; justify-content:center; background:#222; color:#555;">
-               <h3>COMING SOON</h3>
-             </div>
-           </div>
-        </div>
-
-        <div class="project-card">
-           <div class="project-image">
-             <div style="height:100%; display:flex; align-items:center; justify-content:center; background:#222; color:#555;">
-               <h3>COMING SOON</h3>
-             </div>
-           </div>
-        </div>
-
-      </div>
-    </section>
+      <section class="content" aria-label="Web development resources">
+        <article class="resource-card"><div><h2>1. HTML Foundations</h2><p>Learn semantic structure, forms, links, images, and accessible page landmarks.</p></div><a class="resource-link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener noreferrer">Open MDN HTML guide <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>2. CSS &amp; Responsive Design</h2><p>Practice Flexbox, Grid, responsive breakpoints, typography, and visual hierarchy.</p></div><a class="resource-link" href="https://web.dev/learn/css" target="_blank" rel="noopener noreferrer">Open web.dev CSS course <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>3. JavaScript Essentials</h2><p>Use events, DOM updates, arrays, modules, and browser APIs to create real interactions.</p></div><a class="resource-link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank" rel="noopener noreferrer">Open MDN JavaScript guide <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>4. Build &amp; Publish</h2><p>Finish with a responsive portfolio project, test it on mobile, and publish it with GitHub Pages.</p></div><a class="resource-link" href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Learn GitHub Pages <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+      </section>
+    </main>
+    <script src="track.js"></script>
   </body>
 </html>

@@ -109,11 +109,11 @@
         themeToggle.setAttribute('aria-pressed', String(isLight));
       };
 
-      setTheme(localStorage.getItem('theme') === 'light');
+      setTheme((localStorage.getItem('learn-coding-theme') || localStorage.getItem('theme')) === 'light');
       themeToggle.addEventListener('click', () => {
         const isLight = !document.body.classList.contains('light-mode');
         setTheme(isLight);
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        localStorage.setItem('learn-coding-theme', isLight ? 'light' : 'dark');
       });
 
       const closeMenu = () => {
