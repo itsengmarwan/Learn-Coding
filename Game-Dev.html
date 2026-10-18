@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Development Track</title>
     <link rel="stylesheet" href="Dev-Style.css" />
+    <link rel="stylesheet" href="learn-theme.css" />
     <link rel="icon" href="picture/logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
-  <body>
+  <body class="track-page">
     <header>
       <a href="./index.html" class="logo">LEARN <span>CODING</span></a>
       <div class="nav-links">
         <a href="./index.html" class="nav-btn"><i class="fas fa-home"></i> Home</a>
-        <div class="theme-switch" id="theme-toggle"><i class="fas fa-moon"></i></div>
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><i class="fas fa-moon" aria-hidden="true"></i></button>
       </div>
     </header>
 
@@ -27,20 +28,12 @@
         <div class="step-item"><i class="fas fa-book"></i> C# Basics</div>
       </div>
 
-      <div class="content">
-        <div class="project-card">
-          <div class="project-image">
-            <iframe src="https://www.youtube.com/embed/OGFHFvtCmkE" title="Video" allowfullscreen></iframe>
-            <div class="video-label">1. Introduction to Unity Engine</div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <iframe src="https://www.youtube.com/embed/JeNM21S8HQ4" title="Video" allowfullscreen></iframe>
-            <div class="video-label">2. Creating Your First Script</div>
-          </div>
-        </div>
-      </div>
+      <section class="content" aria-label="Game development resources">
+        <article class="resource-card"><div><h2>1. Set up Unity</h2><p>Install Unity Hub, choose an LTS editor, and understand scenes, GameObjects, and components.</p></div><a class="resource-link" href="https://learn.unity.com/pathway/game-development" target="_blank" rel="noopener noreferrer">Open Unity pathway <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>2. Learn C# for games</h2><p>Practice variables, methods, classes, and the component scripts that drive gameplay.</p></div><a class="resource-link" href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" target="_blank" rel="noopener noreferrer">Start the C# tour <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>3. Build game systems</h2><p>Create input, movement, UI, prefabs, scenes, and simple game loops with reusable code.</p></div><a class="resource-link" href="https://learn.unity.com/tutorial/creating-a-gameplay-loop" target="_blank" rel="noopener noreferrer">Build a gameplay loop <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>4. Test and publish</h2><p>Profile performance, test multiple resolutions, package a build, and share a playable prototype.</p></div><a class="resource-link" href="https://docs.unity3d.com/Manual/PublishingBuilds.html" target="_blank" rel="noopener noreferrer">Read build guidance <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+      </section>
     </section>
 
     <script src="track.js"></script>

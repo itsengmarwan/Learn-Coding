@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iOS Development Track</title>
     <link rel="stylesheet" href="Dev-Style.css" />
+    <link rel="stylesheet" href="learn-theme.css" />
     <link rel="icon" href="picture/logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
-  <body>
+  <body class="track-page">
     <header>
       <a href="./index.html" class="logo">LEARN <span>CODING</span></a>
       <div class="nav-links">
         <a href="./index.html" class="nav-btn"><i class="fas fa-home"></i> Home</a>
-        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to light theme" style="border: 0; background: transparent; color: inherit;"><i class="fas fa-moon" aria-hidden="true"></i></button>
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><i class="fas fa-moon" aria-hidden="true"></i></button>
       </div>
     </header>
 
@@ -27,18 +28,12 @@
         <div class="step-item"><i class="fas fa-book"></i> Build with SwiftUI</div>
       </div>
 
-      <div class="content">
-        <div class="project-card">
-          <a class="project-image" href="https://developer.apple.com/tutorials/swiftui" target="_blank" rel="noopener noreferrer" aria-label="Open Apple's SwiftUI tutorials" style="position: absolute; inset: 0; display: block; background: linear-gradient(135deg, #182b52, #10101d);">
-            <div class="video-label">1. Start building with SwiftUI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
-          </a>
-        </div>
-        <div class="project-card">
-          <a class="project-image" href="https://developer.apple.com/documentation/swift" target="_blank" rel="noopener noreferrer" aria-label="Open Apple's Swift documentation" style="position: absolute; inset: 0; display: block; background: linear-gradient(135deg, #263b69, #10101d);">
-            <div class="video-label">2. Explore the Swift language <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
-          </a>
-        </div>
-      </div>
+      <section class="content" aria-label="iOS development resources">
+        <article class="resource-card"><div><h2>1. Set up Xcode</h2><p>Install Xcode, create a project, and learn the tools used to preview, debug, and test Apple apps.</p></div><a class="resource-link" href="https://developer.apple.com/xcode/" target="_blank" rel="noopener noreferrer">Explore Xcode <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>2. Learn Swift</h2><p>Build a strong foundation with Swift types, functions, optionals, collections, and protocols.</p></div><a class="resource-link" href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/" target="_blank" rel="noopener noreferrer">Read The Swift Book <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>3. Build with SwiftUI</h2><p>Create accessible screens with state, navigation, lists, forms, and reusable SwiftUI views.</p></div><a class="resource-link" href="https://developer.apple.com/tutorials/swiftui" target="_blank" rel="noopener noreferrer">Start SwiftUI tutorials <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+        <article class="resource-card"><div><h2>4. Test and publish</h2><p>Test on simulators and devices, handle different screen sizes, and prepare an App Store release.</p></div><a class="resource-link" href="https://developer.apple.com/app-store/submitting/" target="_blank" rel="noopener noreferrer">Read publishing guidance <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+      </section>
     </section>
 
     <script src="track.js"></script>
