@@ -44,8 +44,27 @@ body.home-page .highlight, body.track-page .logo span { color: var(--learn-accen
 body.home-page .navigation, body.track-page .nav-links { gap: clamp(.75rem, 2vw, 1.5rem); }
 body.home-page .navigation a, body.track-page .nav-btn { transition: color .25s, transform .25s; }
 body.home-page .navigation a:hover, body.track-page .nav-btn:hover { color: var(--learn-accent); transform: translateY(-2px); }
-body.home-page .theme-switch, body.track-page .theme-switch { border: 1px solid var(--learn-border); }
-body.home-page .theme-switch:hover, body.track-page .theme-switch:hover { background: var(--learn-surface); }
+body.home-page .theme-switch, body.track-page .theme-switch {
+  appearance: none;
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--learn-border);
+  border-radius: 50%;
+  background: transparent !important;
+  color: var(--learn-muted);
+  box-shadow: none !important;
+  line-height: 1;
+  transition: color .25s, border-color .25s, background-color .25s, transform .25s;
+}
+body.home-page .theme-switch:hover, body.track-page .theme-switch:hover {
+  background: transparent !important;
+  color: var(--learn-accent);
+  border-color: color-mix(in srgb, var(--learn-accent) 55%, transparent);
+  transform: rotate(12deg);
+}
 
 body.home-page .main, body.track-page .projects {
   position: relative;
