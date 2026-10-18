@@ -130,6 +130,9 @@
       });
 
       document.querySelectorAll('.navigation a').forEach((link) => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navigation.classList.contains('active')) closeMenu();
+      });
       window.addEventListener('scroll', () => document.querySelector('header').classList.toggle('sticky', window.scrollY > 12), { passive: true });
     </script>
   </body>
