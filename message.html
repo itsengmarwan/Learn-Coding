@@ -14,24 +14,26 @@
     <div class="container">
       <div class="form-wrapper">
         <a href="./index.html" class="close-btn"><i class="fas fa-times"></i></a>
+        <a href="./message.html?lang=ar" class="language-link" id="language-toggle">العربية</a>
         <h1>Get in Touch</h1>
-        <p>Have a question? We'd love to hear from you.</p>
+        <p class="form-intro">Have a question? We'd love to hear from you.</p>
         <form target="_blank" action="https://formsubmit.co/marwan.tarek.abosalem@gmail.com" method="POST">
           <div class="input-group">
-            <input type="text" name="name" placeholder=" " required />
-            <label>Full Name</label>
+            <input id="name" type="text" name="name" placeholder=" " required />
+            <label for="name">Full Name</label>
           </div>
           <div class="input-group">
-            <input type="email" name="email" placeholder=" " required />
-            <label>Email Address</label>
+            <input id="email" type="email" name="email" placeholder=" " required />
+            <label for="email">Email Address</label>
           </div>
           <div class="input-group">
-            <textarea name="message" rows="4" placeholder=" " required></textarea>
-            <label>Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
           </div>
           <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
         </form>
       </div>
     </div>
+    <script src="./message.js"></script>
   </body>
 </html>

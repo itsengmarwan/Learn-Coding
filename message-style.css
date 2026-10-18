@@ -17,6 +17,8 @@ body {
 }
 .close-btn { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 1.2rem; transition: 0.3s; }
 .close-btn:hover { color: #3a6cf4; transform: rotate(90deg); }
+.language-link { position: absolute; top: 21px; left: 22px; color: #aeb8d1; text-decoration: none; font-size: .85rem; font-weight: 600; }
+.language-link:hover { color: #6d8cff; }
 h1 { margin-bottom: 10px; font-weight: 700; }
 p { color: #b3b3cc; margin-bottom: 30px; font-size: 0.9em; }
 .input-group { position: relative; margin-bottom: 25px; text-align: left; }
@@ -40,3 +42,7 @@ textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label {
     transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px;
 }
 .submit-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(58, 108, 244, 0.4); }
+html[dir="rtl"] .input-group { text-align: right; }
+html[dir="rtl"] label { right: 15px; left: auto; }
+html[dir="rtl"] input:focus ~ label, html[dir="rtl"] input:not(:placeholder-shown) ~ label,
+html[dir="rtl"] textarea:focus ~ label, html[dir="rtl"] textarea:not(:placeholder-shown) ~ label { right: 10px; left: auto; }
